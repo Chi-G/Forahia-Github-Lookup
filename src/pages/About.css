@@ -1,0 +1,33 @@
+
+.about-container {
+    padding-bottom: 25rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .imageclass img {
+    width: 350px;
+    height: auto;
+    margin-top: -5.9rem;
+  }
+  
+  .textclass {
+    font-size: 1.25rem;
+    margin-left: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .textclass h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .textclass a {
+    color: rgb(198, 67, 67);
+    text-decoration: none;
+  }
+  
+  .textclass a:hover {
+    color: darkred;
+  }
+  
