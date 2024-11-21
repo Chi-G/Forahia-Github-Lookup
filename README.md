@@ -33,5 +33,8 @@ Learn how to create a token [here](https://docs.github.com/en/authentication/kee
 ```bash
 npm install
 
+## demo
+https://githublookup.forahia.org.ng/
+
 ## Author
 Created by Chijindu Nwokeohuru.
