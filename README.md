@@ -34,7 +34,7 @@ Learn how to create a token [here](https://docs.github.com/en/authentication/kee
 npm install
 
 ## demo
-https://githublookup.forahia.org.ng/
+[forahia-github-lookup](https://githublookup.forahia.org.ng/)
 
 ## Author
 Created by Chijindu Nwokeohuru.
