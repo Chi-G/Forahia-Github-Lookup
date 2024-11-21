@@ -26,15 +26,12 @@ Fix applied using `base-200` and `base-300` background classes for proper color 
 1. Rename **_.env.example_** to **_.env_**.
 2. Add your GitHub personal access token to the `.env` file (optional).
 
-Learn how to create a token [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
+Demo [forahia-github-lookup](https://githublookup.forahia.org.ng/).
 
 ### Install Dependencies
 
 ```bash
 npm install
-
-## demo
-[forahia-github-lookup](https://githublookup.forahia.org.ng/)
 
 ## Author
 Created by Chijindu Nwokeohuru.
