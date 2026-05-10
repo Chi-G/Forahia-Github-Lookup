@@ -1,37 +1,48 @@
-# Forahia Github Lookup
+# DevRadar
 
-A React application to search GitHub users and display their profile information. 
+**DevRadar** is an intelligent platform constructed to explore and analyze Github developers, providing a streamlined high-performance analytics dashboard.
 
-## Updates
+Originally conceptualized as a React application, this platform has been comprehensively refactored into a highly efficient, backend-driven **Laravel** ecosystem.
 
-### Q: How do I remove the user stats scroll bars on mobile?
-Fix implemented in [User.jsx](src/pages/User.jsx).
+### 🔗 Demo Link
+Explore DevRadar live at: **[devradar.laravel.cloud](https://devradar.laravel.cloud)**
 
-### BUG: Alert text is not visible
-This issue occurs with the default light theme from DaisyUI. Fixes in [Alert.jsx](src/components/layout/Alert.jsx) ensure the alert component adapts to theme changes and prevents content shift.
+---
 
-### Q: Why doesn't Craco work?
-`craco` is not required with `react-scripts` version 5 or greater. Follow the Tailwind setup for the relevant version:
-- Version 5+: [Tailwind version 3 Setup](https://tailwindcss.com/docs/guides/create-react-app)
-- Version 4: [Tailwind version 2 Setup](https://v2.tailwindcss.com/docs/guides/create-react-app)
+## Tech Stack Overview
+- **Framework**: [Laravel 11](https://laravel.com)
+- **Dynamic Rendering**: [Livewire 3](https://livewire.laravel.com) & Alpine.js
+- **Styling Engine**: [Tailwind CSS v4](https://tailwindcss.com) & DaisyUI
+- **Analytics Subsystem**: Native PHP implementation for repository metadata parsing
+- **Deployment**: Containerized via [Laravel Sail](https://laravel.com/docs/sail)
 
-### BUG: Linking to users' websites
-Ensure external links are constructed correctly by checking if the URL starts with `http`. See [User.jsx](src/pages/User.jsx#L48).
+## Premium Features
+- **Tech Stack Analyzer**: Dynamically inspects global codebase composition and calculates usage percentage across repositories for immediate visualization.
+- **Hero Discovery Suite**: Predictive search architecture designed to source profiles via Github's massive user dataset seamlessly.
+- **Responsive Paginated Intelligence**: High-performance server-side paging systems tracking activity feeds across all screen factors.
+- **Modern Visual Ambient Layers**: Full-spectrum glassmorphism UI with deep-slate aesthetic controls.
 
-### BUG: Light theme RepoItem background is too dark
-Fix applied using `base-200` and `base-300` background classes for proper color scheme adaptation.
+---
 
-## Setup
+## Getting Started
 
-1. Rename **_.env.example_** to **_.env_**.
-2. Add your GitHub personal access token to the `.env` file (optional).
-
-Demo [forahia-github-lookup](https://githublookup.forahia.org.ng/).
-
-### Install Dependencies
+Launch the development server using Laravel Sail:
 
 ```bash
-npm install
+# Copy sample environment configuration
+cp .env.example .env
 
-## Author
-Created by Chijindu Nwokeohuru.
+# Install application dependencies
+composer install && npm install
+
+# Fire up the Sail containers
+./vendor/bin/sail up -d
+
+# Bootstrap database schemas
+./vendor/bin/sail artisan migrate
+```
+
+Visit **http://localhost:8000** to open your development instance.
+
+---
+&copy; 2026 **Forahia Solutions**
